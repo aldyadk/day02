@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+            background-color: pink;
+        }
+        div {
+            border: 1px solid black;
+        }
+
+        #relatif {
+            position: relative;
+            top: 200px;
+            left: 100px;
+        }
+
+        #fiks {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+        }
+
+        #absolut{
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        static
+    </div>
+    <div id="relatif">
+        relative
+    </div>
+    <div id="fiks">
+        fixed
+    </div>
+    <div style="position: relative;top: 200px">
+        relative2
+        <div id="absolut">
+            absolute
+        </div>
+    </div>
+</body>
+</html>
